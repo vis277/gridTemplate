@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  background-color: aqua;
+  grid-template-areas:
+    "headera headerb headerd"
+    "side main main"
+    "footer main main";
+  grid-gap: 2px;
+  height: 96vh;
+  width: 100vw;
+  padding: 10px;
+}
+.common {
+  background-color: brown;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#A {
+  grid-area: headera;
+}
+#B {
+  grid-area: headerb;
+}
+#C {
+  grid-area: main;
+}
+#D {
+  grid-area: headerd;
+}
+#E {
+  grid-area: side;
+}
+#F {
+  grid-area: footer;
+}
